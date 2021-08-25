@@ -1,0 +1,67 @@
+{% extends 'content.html'  %}
+{%  block content  %}
+
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+               
+                
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+               
+              <form action="http://127.0.0.1:8000/Shop/register/" method="post">
+
+                <table class="table table-borderless">
+                    <tr>
+                        <td>Shopname </td>
+                        <td> <input name="shop_name" class="form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> address </td>
+                        <td> <input name="address" class="form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> email-id </td>
+                        <td> <input name="email" class="form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> website </td>
+                        <td> <input name="website" class="form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> phone no </td>
+                        <td> <input name="phone_no" class="form-control" type="number"> </td>
+                    </tr>
+                    <tr>
+                        <td> Username </td>
+                        <td> <input name="username" class="form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td> Password </td>
+                        <td> <input name="password" class="form-control" type="password"> </td>
+                    </tr>
+                    <tr>
+                        <td> Confirm password </td>
+                        <td> <input name="confirm_password" class="form-control" type="password"> </td>
+                    </tr>
+                    <tr>
+                        <td>  </td>
+                        <td> <button class="btn btn-dark"> REGISTER </button> </td>
+                    </tr>
+                </table>
+              </form>
+               
+                
+            </div>
+            <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+               
+                
+            </div>
+           
+    </div>
+
+    
+{%  endblock  %}

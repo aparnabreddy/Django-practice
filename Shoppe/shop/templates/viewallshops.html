@@ -1,0 +1,50 @@
+{% extends 'content.html'  %}
+{%  block content  %}
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+    <div class="col col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+      <table class="table table-stripes">
+        <thead class="table-dark">
+          <tr>
+            <th> Shop name </th>
+            <th> Address </th>
+            <th> Email-id </th>
+            <th> Website</th>
+            <th>Phone number</th>
+            <th> Username</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          {% for i in data  %}
+          <tr>
+            <td> {{ i.shop_name }} </td>
+            <td> {{ i.address }} </td>
+            <td> {{ i.email }} </td>
+            <td> {{ i.website }} </td>
+            <td> {{ i.phone_no }} </td>
+            <td> {{ i.username }} </td>
+            <td> {{ i.password }} </td>
+            <td> {{ i.confirm_passwordd }} </td>
+          
+        </tr>
+        {% endfor %}
+
+
+        </tbody>
+      </table>
+
+
+    </div>
+    <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+  </div>
+</div>
+    
+
+{%  endblock  %}
+
+    
